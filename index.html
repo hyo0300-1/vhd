@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>우리 아이 국어 3분 진단 | 비해당학원</title>
+<meta name="description" content="원주 중·고등 국어 전문 비해당학원. 3분 진단으로 아이의 국어가 어디서 막히는지 확인하고 상담을 신청하세요.">
+<meta property="og:title" content="공부는 하는데, 국어 점수는 왜 그대로일까요?">
+<meta property="og:description" content="3분 진단으로 아이의 국어가 어디서 막히는지 먼저 확인해 보세요. 비해당학원">
+<meta property="og:image" content="assets/student.jpg">
+<meta name="theme-color" content="#121a2b">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --ink:#121a2b; --ink-2:#47505f; --ink-3:#6b7382;
+  --paper:#f7f5f0; --white:#fff; --line:#e0dcd2;
+  --purple:#6a33cc; --purple-d:#5426a8; --purple-l:#f0eafb;
+  --seal:#d9191f; --err:#b3261e;
+  --wrap:1040px; --narrow:560px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:17px;line-height:1.65;word-break:keep-all;overflow-wrap:break-word}
+img{display:block;max-width:100%}
+h1,h2,h3,p,ul,ol{margin:0;padding:0}
+ul,ol{list-style:none}
+a{color:inherit}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--purple);outline-offset:2px}
+h1:focus,h2:focus{outline:none}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--line)}
+.top-in{max-width:var(--wrap);margin:auto;padding:0 20px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;text-decoration:none;font-weight:800;font-size:18px}
+.brand img{height:40px;width:auto}
+.top-tel{font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap}
+.top-tel::before{content:"상담 ";color:var(--ink-3);font-weight:500}
+
+/* buttons */
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:58px;padding:14px 24px;border:0;border-radius:10px;background:var(--purple);color:#fff;font:inherit;font-size:18px;font-weight:700;text-decoration:none;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--purple-d)}
+.btn:disabled{opacity:.6;cursor:default}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost:hover{background:rgba(18,26,43,.05)}
+.textlink{background:none;border:0;padding:8px 0;font:inherit;font-size:15.5px;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+/* hero */
+.hero{background:var(--ink);color:#fff}
+.hero-in{max-width:var(--wrap);margin:auto;display:grid}
+.hero-img{height:min(38vh,300px);overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:60% 62%}
+.hero-copy{padding:28px 20px 36px}
+.eyebrow{font-size:14.5px;font-weight:600;color:#c9b6f2;letter-spacing:-.01em}
+.hero h1{font-size:clamp(30px,8.2vw,46px);line-height:1.28;font-weight:800;letter-spacing:-.03em;margin:10px 0 14px}
+.hero-sub{color:#d6dae2;font-size:17px;margin-bottom:24px}
+.hero .btn{background:#fff;color:var(--ink)}
+.hero .btn:hover{background:#e9e6f4}
+.hero-note{margin-top:12px;font-size:14.5px;color:#aeb5c2;text-align:center}
+.hero-note button{color:#fff}
+
+/* sections */
+.sec{padding:60px 20px}
+.sec-in{max-width:var(--wrap);margin:auto}
+.kicker{font-size:14.5px;font-weight:700;color:var(--purple);margin-bottom:8px}
+.sec h2{font-size:clamp(25px,6.4vw,34px);line-height:1.35;font-weight:800;letter-spacing:-.025em;margin-bottom:24px}
+.white{background:var(--white)}
+
+.pains li{padding:17px 0;border-top:1px solid var(--line);font-size:18px;font-weight:600;line-height:1.5}
+.pains li:last-child{border-bottom:1px solid var(--line)}
+.pains-end{margin-top:22px;color:var(--ink-2)}
+
+.creed{text-align:center;background:var(--white);border-block:1px solid var(--line)}
+.creed img{width:min(100%,420px);margin:0 auto 22px;height:auto}
+.creed p{font-size:19px;font-weight:600;line-height:1.6;max-width:27em;margin:auto}
+
+.ways{display:grid;gap:26px}
+.way{display:grid;grid-template-columns:44px 1fr;gap:16px}
+.seal{width:40px;height:40px;background:var(--seal);color:#fff;border-radius:6px;display:grid;place-items:center;font-weight:800;font-size:17px}
+.way h3{font-size:19.5px;font-weight:700;margin-bottom:4px;line-height:1.4}
+.way p{color:var(--ink-2);font-size:16.5px}
+
+.winter{background:var(--ink);color:#fff;padding:0}
+.winter-in{max-width:var(--wrap);margin:auto;display:grid}
+.winter-img{height:240px;overflow:hidden}
+.winter-img img{width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+.winter-copy{padding:40px 20px 52px}
+.winter .kicker{color:#c9b6f2}
+.winter h2{margin-bottom:12px}
+.winter-lead{color:#d6dae2;margin-bottom:22px}
+.winter li{padding:14px 0;border-top:1px solid rgba(255,255,255,.18)}
+.winter li b{display:block;font-size:17.5px}
+.winter li span{color:#c3c9d4;font-size:15.5px}
+
+.steps{counter-reset:s;display:grid;gap:0}
+.steps li{counter-increment:s;position:relative;padding:0 0 24px 48px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;font-size:15px;display:grid;place-items:center}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:15px;top:36px;bottom:4px;width:2px;background:var(--line)}
+.steps b{display:block;font-size:18px;line-height:1.75}
+.steps span{color:var(--ink-2);font-size:16px}
+
+.place{display:grid;gap:20px}
+.place img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:50% 100%;border-radius:10px}
+.place address{font-style:normal;font-weight:600;margin-bottom:6px}
+.place p:not(.kicker){color:var(--ink-2);margin-bottom:12px}
+
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{padding:17px 30px 17px 0;font-weight:650;cursor:pointer;list-style:none;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:24px;font-weight:400;color:var(--ink-3)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding:0 0 18px;color:var(--ink-2)}
+
+.closing{background:var(--ink);color:#fff;text-align:center}
+.closing h2{margin-bottom:10px}
+.closing p{color:#d6dae2;margin-bottom:24px}
+.closing .box{max-width:420px;margin:auto}
+.closing .btn{background:#fff;color:var(--ink)}
+
+footer{padding:30px 20px 110px;font-size:14.5px;color:var(--ink-3);background:var(--paper)}
+footer .sec-in>*{margin-bottom:3px}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:15;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .2s}
+.sticky.on{transform:none}
+.sticky .btn{max-width:480px;margin:auto;min-height:52px;font-size:17px}
+
+/* flow screens */
+.flow{max-width:var(--narrow);margin:auto;padding:24px 20px 72px;min-height:calc(100vh - 61px)}
+.flow-h{font-size:clamp(25px,6.6vw,31px);line-height:1.36;font-weight:800;letter-spacing:-.025em}
+.flow-sub{color:var(--ink-2);margin-top:8px}
+.bar-row{display:flex;align-items:center;gap:12px;margin-bottom:30px;min-height:40px}
+.back{background:none;border:0;padding:8px 10px 8px 0;font:inherit;font-size:15.5px;color:var(--ink-2);cursor:pointer}
+.bar{flex:1;height:5px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--purple);transition:width .25s}
+.count{font-size:14.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.opts{display:grid;gap:10px;margin-top:26px}
+.opts.grid{grid-template-columns:repeat(3,1fr)}
+.opt{width:100%;min-height:58px;padding:14px 18px;text-align:left;background:var(--white);border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:17px;font-weight:550;line-height:1.45;color:var(--ink);cursor:pointer;transition:border-color .12s,background .12s}
+.opts.grid .opt{text-align:center;padding:14px 6px}
+@media (hover:hover){.opt:hover{border-color:var(--purple)}}
+.opt[aria-pressed=true]{border-color:var(--purple);background:var(--purple-l)}
+
+.r-tag{font-size:14.5px;font-weight:700;color:var(--purple);margin-bottom:8px}
+.r-block{margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}
+.r-block h3{font-size:18px;font-weight:700;margin-bottom:10px}
+.r-block li{position:relative;padding:5px 0 5px 20px;color:var(--ink-2)}
+.r-block li::before{content:"";position:absolute;left:2px;top:15px;width:7px;height:7px;background:var(--seal);border-radius:1.5px}
+.r-block p{color:var(--ink-2)}
+.r-note{margin-top:24px;font-size:14.5px;color:var(--ink-3)}
+.r-cta{margin-top:26px;display:grid;gap:8px;justify-items:center}
+.r-cta small{font-size:14.5px;color:var(--ink-3)}
+
+/* form */
+.demo{background:#fff4d6;border:1px solid #e5c766;border-radius:8px;padding:11px 14px;font-size:14.5px;margin-bottom:20px;line-height:1.5}
+.badge{display:inline-block;background:var(--purple-l);color:var(--purple-d);font-size:14.5px;font-weight:650;padding:5px 10px;border-radius:6px;margin-top:14px}
+form{margin-top:24px}
+.field{margin:0 0 22px;border:0;padding:0;min-width:0}
+.field>label,.field>legend{display:block;font-weight:650;font-size:16px;margin-bottom:7px;padding:0}
+.opt-mark{color:var(--ink-3);font-weight:500;font-size:14.5px}
+input[type=text],input[type=tel],select,textarea{width:100%;min-height:54px;padding:13px 14px;border:1.5px solid #cfcabd;border-radius:9px;background:var(--white);font:inherit;font-size:17px;color:var(--ink)}
+textarea{min-height:92px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--purple);outline:1px solid var(--purple)}
+[aria-invalid=true]{border-color:var(--err)!important}
+.err{color:var(--err);font-size:14.5px;font-weight:550;margin-top:6px}
+.chips{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.chip{position:relative;display:block}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:flex;align-items:center;justify-content:center;min-height:50px;padding:8px;border:1.5px solid #cfcabd;border-radius:9px;background:var(--white);font-weight:550;font-size:16px;text-align:center}
+.chip input:checked+span{border-color:var(--purple);background:var(--purple-l);color:var(--purple-d)}
+.chip input:focus-visible+span{outline:3px solid var(--purple);outline-offset:2px}
+.consent{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:6px 14px;margin-bottom:20px}
+.check{display:flex;gap:10px;align-items:flex-start;padding:11px 0;font-size:16px;cursor:pointer;line-height:1.5}
+.check input{width:21px;height:21px;margin:2px 0 0;flex:none;accent-color:var(--purple)}
+.consent details{font-size:14.5px;color:var(--ink-2);padding:0 0 10px 31px}
+.consent summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.consent dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px}
+.consent dt{font-weight:650}.consent dd{margin:0}
+.consent hr{border:0;border-top:1px solid var(--line);margin:2px 0}
+.send-err{background:#fdecea;border:1px solid #efb8b3;color:#7c1d17;border-radius:8px;padding:12px 14px;margin-bottom:14px;font-size:15.5px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* done */
+.done-mark{width:52px;height:52px;background:var(--seal);border-radius:8px;display:grid;place-items:center;color:#fff;font-size:26px;font-weight:800;margin-bottom:18px}
+.call{margin-top:26px;display:grid;gap:10px}
+
+@media (min-width:820px){
+  .hero-in{grid-template-columns:1fr 1fr;align-items:stretch}
+  .hero-img{order:2;height:auto;min-height:560px}
+  .hero-copy{padding:72px 48px 72px 24px;align-self:center}
+  .hero .btn{max-width:380px}
+  .hero-note{text-align:left}
+  .sec{padding:84px 24px}
+  .two{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+  .ways{grid-template-columns:repeat(3,1fr);gap:32px}
+  .way{grid-template-columns:1fr;gap:12px}
+  .winter-in{grid-template-columns:1fr 1fr}
+  .winter-img{height:auto;min-height:480px}
+  .winter-copy{padding:72px 24px 72px 48px;align-self:center}
+  .place{grid-template-columns:7fr 5fr;gap:40px;align-items:center}
+  .sticky{display:none}
+  footer{padding-bottom:40px}
+  .flow{padding-top:40px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#" aria-label="비해당학원 처음으로">
+      <img src="https://vihaedang.atedu.co.kr/upload/OrgImage/vihaedang/image_686b0aa995891_nobg.png" alt="비해당학원" onerror="this.replaceWith(document.createTextNode('비해당학원'))">
+    </a>
+    <a class="top-tel" data-tel data-track="tel_header"></a>
+  </div>
+</header>
+<noscript><p style="padding:20px">이 페이지는 JavaScript가 필요합니다. 상담 문의: 010-4674-9373</p></noscript>
+
+<!-- 1. 랜딩 -->
+<div id="v-landing" hidden>
+  <section class="hero">
+    <div class="hero-in">
+      <div class="hero-img"><img src="assets/student.jpg" alt="창가 책상에서 집중해 공부하는 학생" width="1080" height="1165"></div>
+      <div class="hero-copy" id="hero-copy">
+        <p class="eyebrow">원주 중·고등 국어 전문 · 비해당학원</p>
+        <h1 id="hero-title"></h1>
+        <p class="hero-sub" id="hero-sub"></p>
+        <a class="btn" href="#quiz/1" data-track="cta_hero">3분 국어 진단 시작하기</a>
+        <p class="hero-note">이름·연락처 없이 결과를 바로 확인합니다.<br><a class="textlink" href="#apply" data-track="cta_direct">진단 없이 바로 상담 신청</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-in two">
+      <div>
+        <p class="kicker">학부모님이 자주 하시는 말씀</p>
+        <h2>이런 모습,<br>낯설지 않으신가요?</h2>
+      </div>
+      <div>
+        <ul class="pains">
+          <li>문제집은 다 풀었는데 왜 틀렸는지 설명하지 못합니다.</li>
+          <li>지문을 끝까지 읽어도 내용이 머리에 남지 않습니다.</li>
+          <li>내신은 괜찮은데 모의고사만 보면 등급이 떨어집니다.</li>
+          <li>시간이 모자라 마지막 지문은 읽지도 못합니다.</li>
+        </ul>
+        <p class="pains-end">겉으로는 비슷해 보여도 원인은 아이마다 다릅니다. 그래서 비해당학원은 어디서 막히는지부터 확인합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec creed">
+    <div class="sec-in">
+      <img src="https://vihaedang.atedu.co.kr/upload/OrgImage/vihaedang/image_686b0aa995891_nobg.png" alt="비해당 로고" onerror="this.remove()">
+      <p>‘게으름 없이 정진하라.’<br>학원 이름에 담긴 이 원칙대로,<br>학생 한 명 한 명의 공부를<br>끝까지 살핍니다.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-in">
+      <p class="kicker">비해당학원의 지도 방식</p>
+      <h2>체계적으로 가르치고,<br>한 명씩 확인합니다</h2>
+      <div class="ways">
+        <div class="way"><div class="seal" aria-hidden="true">1</div><div><h3>개인별 취약점 분석</h3><p>독해, 문학, 문법 중 어디서 점수가 빠지는지 학생별로 나누어 봅니다.</p></div></div>
+        <div class="way"><div class="seal" aria-hidden="true">2</div><div><h3>매일 1:1 오답 분석</h3><p>답을 알려 주는 데서 끝내지 않고, 지문에서 스스로 근거를 찾는 습관을 만듭니다.</p></div></div>
+        <div class="way"><div class="seal" aria-hidden="true">3</div><div><h3>단계별 자체 교재와 강좌</h3><p>문학·문법 개념서부터 학년별 모의고사, 중등 내신 대비까지 수준에 맞게 이어집니다.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="winter">
+    <div class="winter-in">
+      <div class="winter-img"><img src="assets/desk.jpg" alt="책상 위에 놓인 비해당학원 교재와 학습 계획표" loading="lazy" width="1080" height="1045"></div>
+      <div class="winter-copy">
+        <p class="kicker">겨울방학 몰입 특강</p>
+        <h2>기말고사 이후 8주,<br>새 학기를 준비합니다</h2>
+        <p class="winter-lead">학기 중에 메우기 어려웠던 부분을 방학 동안 집중해서 채웁니다.</p>
+        <ul>
+          <li><b>수능 국어 독해력</b><span>비문학 지문의 독해 패턴을 체계적으로 익힙니다.</span></li>
+          <li><b>내신 필수 문학·문법</b><span>시험에 꼭 필요한 개념을 기초부터 다집니다.</span></li>
+          <li><b>1:1 밀착 피드백</b><span>매일의 오답을 함께 분석하고 맞춤으로 관리합니다.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec white">
+    <div class="sec-in two">
+      <div>
+        <p class="kicker">상담은 이렇게 진행됩니다</p>
+        <h2>결과를 먼저 보시고,<br>상담은 그다음에<br>결정하세요</h2>
+      </div>
+      <ol class="steps">
+        <li><b>3분 진단</b><span>학부모님이 평소 보신 아이의 모습을 6개 문항으로 답합니다.</span></li>
+        <li><b>유형별 결과 확인</b><span>우선 챙길 부분과 상담 때 확인할 내용을 바로 볼 수 있습니다.</span></li>
+        <li><b>상담 신청</b><span>편한 방식과 시간대를 남겨 주시면 학원에서 연락드립니다.</span></li>
+        <li><b>1:1 상담</b><span>최근 성적표와 시험지를 함께 보며 필요한 공부를 구체적으로 안내합니다.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-in place">
+      <img src="assets/facility.jpg" alt="비해당학원 내부 모습" loading="lazy" width="1080" height="915">
+      <div>
+        <p class="kicker">학원 위치</p>
+        <h2 style="margin-bottom:12px">원주에서 직접<br>둘러보실 수 있습니다</h2>
+        <address data-address></address>
+        <p>방문 상담을 원하시면 신청 시 ‘방문 상담’을 선택해 주세요.</p>
+        <a class="textlink" data-map target="_blank" rel="noopener" data-track="map">네이버 지도에서 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec white">
+    <div class="sec-in two">
+      <div><p class="kicker">자주 묻는 질문</p><h2>상담 전에<br>궁금하신 점</h2></div>
+      <div class="faq">
+        <details><summary>상담만 받아도 되나요?</summary><p>네. 상담을 받으셨다고 등록하셔야 하는 것은 아닙니다. 아이에게 지금 무엇이 필요한지 확인하는 자리로 생각해 주세요.</p></details>
+        <details><summary>어떤 학년이 수강할 수 있나요?</summary><p>중학생과 고등학생을 대상으로 내신과 수능 국어를 지도합니다. 현재 학년과 목표에 따라 맞는 과정을 상담에서 안내해 드립니다.</p></details>
+        <details><summary>아이 성적이 많이 낮아도 괜찮을까요?</summary><p>겨울 특강은 취약한 독해와 문법을 기초부터 다지는 과정을 포함합니다. 상담에서 현재 수준을 확인한 뒤 시작 지점을 함께 정합니다.</p></details>
+        <details><summary>수강료와 시간표는 어떻게 확인하나요?</summary><p>학년과 과정에 따라 달라 상담 때 자세히 안내해 드립니다. 먼저 확인이 필요하시면 전화로 문의해 주세요.</p></details>
+        <details><summary>상담 때 무엇을 준비하면 좋을까요?</summary><p>최근 성적표와 국어 시험지가 있으면 충분합니다. 없어도 상담은 가능합니다.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec closing">
+    <div class="sec-in">
+      <h2>아이의 국어,<br>어디서 막히는지부터 확인해 보세요</h2>
+      <p>6개 문항, 약 3분이면 충분합니다.</p>
+      <div class="box"><a class="btn" href="#quiz/1" data-track="cta_closing">3분 국어 진단 시작하기</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="sec-in">
+      <p><b>비해당학원</b></p>
+      <p data-address></p>
+      <p>Tel <a data-tel data-track="tel_footer"></a></p>
+    </div>
+  </footer>
+
+  <div class="sticky" id="sticky"><a class="btn" href="#quiz/1" data-track="cta_sticky">3분 국어 진단 시작하기</a></div>
+</div>
+
+<!-- 2. 진단 -->
+<main id="v-quiz" class="flow" hidden>
+  <div class="bar-row">
+    <button class="back" id="q-back" type="button">← 이전</button>
+    <div class="bar" aria-hidden="true"><i id="q-bar"></i></div>
+    <span class="count" id="q-count"></span>
+  </div>
+  <h1 class="flow-h" id="q-title" tabindex="-1"></h1>
+  <p class="flow-sub" id="q-sub"></p>
+  <div class="opts" id="q-opts"></div>
+</main>
+
+<!-- 3. 결과 -->
+<main id="v-result" class="flow" hidden>
+  <p class="r-tag">진단 결과</p>
+  <h1 class="flow-h" id="r-title" tabindex="-1"></h1>
+  <p class="flow-sub" id="r-lead"></p>
+  <div class="r-block"><h3>이번 겨울, 먼저 챙길 부분</h3><ul id="r-todo"></ul></div>
+  <div class="r-block"><h3>학년에 따라 함께 볼 점</h3><p id="r-grade"></p></div>
+  <div class="r-block"><h3>상담에서 확인해 드릴 내용</h3><ul id="r-ask"></ul></div>
+  <div class="r-cta">
+    <a class="btn" href="#apply" data-track="cta_result">이 결과로 상담 신청하기</a>
+    <small>전화·방문 중 편한 방식으로 선택하실 수 있습니다.</small>
+    <a class="textlink" href="#quiz/1" id="r-retry">다시 진단하기</a>
+  </div>
+  <p class="r-note">학부모님의 응답을 바탕으로 한 참고용 결과입니다. 정확한 진단은 상담에서 성적표와 시험지를 함께 보며 진행합니다.</p>
+</main>
+
+<!-- 4. 신청 -->
+<main id="v-apply" class="flow" hidden>
+  <div class="demo" data-demo hidden><b>미리보기 모드</b> · 아직 신청 접수처가 연결되지 않아, 입력한 내용이 전송되지 않습니다.</div>
+  <h1 class="flow-h" id="a-title" tabindex="-1">상담 신청</h1>
+  <p class="flow-sub">1분이면 충분합니다. 남겨 주신 시간대에 맞춰 학원에서 연락드립니다.</p>
+  <p class="badge" id="a-badge" hidden></p>
+  <form id="form" novalidate>
+    <div class="field"><label for="f-name">학부모님 성함</label><input id="f-name" name="parentName" type="text" autocomplete="name" maxlength="30" aria-describedby="e-name"><p class="err" id="e-name" hidden></p></div>
+    <div class="field"><label for="f-phone">연락처</label><input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="010-0000-0000" maxlength="13" aria-describedby="e-phone"><p class="err" id="e-phone" hidden></p></div>
+    <div class="field"><label for="f-grade">자녀 학년</label>
+      <select id="f-grade" name="grade" aria-describedby="e-grade"><option value="">선택해 주세요</option><option>중1</option><option>중2</option><option>중3</option><option>고1</option><option>고2</option><option>고3</option></select><p class="err" id="e-grade" hidden></p></div>
+    <fieldset class="field"><legend>상담 방식</legend>
+      <div class="chips">
+        <label class="chip"><input type="radio" name="method" value="전화 상담" checked><span>전화 상담</span></label>
+        <label class="chip"><input type="radio" name="method" value="방문 상담"><span>방문 상담</span></label>
+      </div></fieldset>
+    <fieldset class="field"><legend>연락받기 편한 시간</legend>
+      <div class="chips">
+        <label class="chip"><input type="radio" name="time" value="평일 오전"><span>평일 오전</span></label>
+        <label class="chip"><input type="radio" name="time" value="평일 오후" checked><span>평일 오후</span></label>
+        <label class="chip"><input type="radio" name="time" value="평일 저녁"><span>평일 저녁</span></label>
+        <label class="chip"><input type="radio" name="time" value="주말"><span>주말</span></label>
+      </div></fieldset>
+    <div class="field"><label for="f-q">궁금한 점 <span class="opt-mark">(선택)</span></label><textarea id="f-q" name="question" maxlength="500" placeholder="예: 최근 모의고사 성적, 겨울 특강 시간표 등"></textarea></div>
+    <div class="hp" aria-hidden="true"><label>웹사이트<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+
+    <div class="consent">
+      <label class="check"><input type="checkbox" id="f-privacy" aria-describedby="e-privacy"><span><b>[필수]</b> 개인정보 수집·이용에 동의합니다.</span></label>
+      <details>
+        <summary>내용 보기</summary>
+        <dl>
+          <dt>항목</dt><dd>학부모 성함, 연락처, 자녀 학년, 진단 응답, 상담 희망 사항</dd>
+          <dt>목적</dt><dd>상담 일정 안내 및 상담 진행</dd>
+          <dt>보유</dt><dd><span data-retention></span>(삭제 요청 시 즉시 파기)</dd>
+        </dl>
+        <p style="margin:8px 0 0">동의를 거부하실 수 있으며, 거부 시 온라인 상담 신청은 어렵습니다. 전화로는 문의하실 수 있습니다.</p>
+      </details>
+      <hr>
+      <label class="check"><input type="checkbox" id="f-mkt"><span><b>[선택]</b> 특강·설명회 등 학원 소식을 문자로 받습니다.</span></label>
+    </div>
+    <p class="err" id="e-privacy" hidden style="margin:-12px 0 16px"></p>
+    <div class="send-err" id="send-err" role="alert" hidden></div>
+    <button class="btn" id="submit" type="submit">상담 신청하기</button>
+  </form>
+</main>
+
+<!-- 5. 완료 -->
+<main id="v-done" class="flow" hidden>
+  <div class="demo" data-demo hidden><b>미리보기 모드</b> · 화면 확인용이며 실제로 접수되지 않았습니다.</div>
+  <div class="done-mark" aria-hidden="true">✓</div>
+  <h1 class="flow-h" id="d-title" tabindex="-1">상담 신청이 접수되었습니다</h1>
+  <p class="flow-sub">남겨 주신 시간대에 맞춰 학원에서 연락드리겠습니다.</p>
+  <div class="r-block"><h3>상담 전에 준비해 주시면 좋아요</h3>
+    <ul><li>최근 국어 성적표</li><li>틀린 표시가 남아 있는 국어 시험지</li><li>아이가 어려워한다고 말한 부분</li></ul>
+    <p style="margin-top:10px">준비가 어려우셔도 상담은 가능합니다.</p>
+  </div>
+  <div class="r-block" id="d-result" hidden><h3>이번 진단 결과</h3><p id="d-type"></p></div>
+  <div class="call">
+    <a class="btn ghost" data-tel-btn data-track="tel_done">바로 전화하기</a>
+    <a class="textlink" href="#" style="justify-self:center">처음으로 돌아가기</a>
+  </div>
+</main>
+
+<script src="config.js"></script>
+<script>
+(function(){
+'use strict';
+var C = window.FUNNEL_CONFIG;
+var $ = function(id){return document.getElementById(id)};
+
+/* ---------- 유입 소재별 헤드라인 (?c=winter|trust|method) ---------- */
+var HERO = {
+  base:{t:'공부는 하는데,<br>국어 점수는 왜 그대로일까요?',s:'3분 진단으로 아이의 국어가 어디서 막히는지 먼저 확인해 보세요.'},
+  winter:{t:'기말고사 이후 8주,<br>국어를 다시 세웁니다',s:'특강을 고르기 전에, 아이에게 먼저 필요한 공부가 무엇인지 3분 진단으로 확인해 보세요.'},
+  trust:{t:'바른 배움,<br>흔들리지 않는 국어 실력',s:'아이의 국어가 어디서 막히는지 3분 진단으로 확인하고, 상담에서 함께 이야기 나눠 보세요.'},
+  method:{t:'흔들림 없는 국어,<br>게으름 없는 정진',s:'원주 중·고등 내신부터 수능 국어까지. 아이의 현재 위치를 3분 진단으로 확인해 보세요.'}
+};
+
+/* ---------- 진단 문항 ---------- */
+var QS = [
+ {id:'grade',t:'자녀의 현재 학년을 알려 주세요',s:'학년에 맞춰 결과를 안내해 드립니다.',grid:true,
+  o:[{l:'중1'},{l:'중2'},{l:'중3'},{l:'고1'},{l:'고2'},{l:'고3'}]},
+ {id:'sign',t:'아이의 국어 공부에서 가장 걱정되는 모습은 무엇인가요?',s:'가장 가까운 하나만 골라 주세요.',
+  o:[{l:'지문을 읽어도 무슨 내용인지 설명하지 못해요',k:{reading:3}},
+     {l:'시·소설이나 문법 용어가 나오면 막혀요',k:{concept:3}},
+     {l:'내신은 괜찮은데 모의고사 성적이 낮아요',k:{gap:3}},
+     {l:'틀렸던 문제를 또 틀려요',k:{habit:3}}]},
+ {id:'lose',t:'시험에서 주로 어디서 점수가 떨어지나요?',s:'',
+  o:[{l:'비문학(독서) 지문',k:{reading:2}},{l:'문학 작품 해석',k:{concept:2}},{l:'문법',k:{concept:2}},
+     {l:'시간이 모자라 뒷부분',k:{reading:1,gap:1}},{l:'잘 모르겠어요',k:{habit:2}}]},
+ {id:'wrong',t:'틀린 문제를 아이는 어떻게 하나요?',s:'',
+  o:[{l:'답만 확인하고 넘어가요',k:{habit:2}},{l:'해설은 읽지만 왜 틀렸는지 설명하지 못해요',k:{habit:1,reading:1}},
+     {l:'지문에서 근거를 찾아 다시 풀어요',k:{gap:1}},{l:'어떻게 하는지 잘 모르겠어요',k:{habit:1}}]},
+ {id:'trend',t:'최근 국어 성적은 어떤 흐름인가요?',s:'',
+  o:[{l:'오랫동안 낮은 편이에요',k:{reading:1,concept:1}},{l:'시험마다 들쭉날쭉해요',k:{gap:2}},
+     {l:'학년이 올라가며 떨어지고 있어요',k:{concept:1,gap:1}},{l:'나쁘지 않지만 한 단계 더 올리고 싶어요',k:{gap:1,habit:1}}]},
+ {id:'goal',t:'이번 겨울, 무엇이 가장 달라지면 좋을까요?',s:'상담에서 가장 먼저 이야기 나눌 내용입니다.',
+  o:[{l:'독해 기초가 잡히면 좋겠어요',k:{reading:1}},{l:'다음 학기 내신을 잘 준비하고 싶어요',k:{concept:1}},
+     {l:'모의고사·수능 성적을 올리고 싶어요',k:{gap:1}},{l:'스스로 공부하는 습관이 생기면 좋겠어요',k:{habit:1}}]}
+];
+
+/* ---------- 결과 유형 ---------- */
+var TYPES = {
+ reading:{n:'독해 기초형',t:'읽어도 남지 않는<br>‘독해 기초형’에 가깝습니다',
+  l:'글을 끝까지 읽어도 구조가 잡히지 않으면 문제를 많이 풀어도 점수로 잘 이어지지 않습니다. 양을 늘리기 전에 읽는 방법부터 점검하면 좋습니다.',
+  todo:['지문의 핵심 문장과 전개 구조를 찾는 연습','비문학 독해 패턴을 유형별로 익히기','읽은 내용을 자기 말로 설명해 보기'],
+  ask:['지문을 읽을 때 어느 단계에서 이해가 끊기는지','현재 학년에 맞는 지문 길이와 난도','독해 훈련을 시작할 수준과 과정']},
+ concept:{n:'문학·문법 개념형',t:'개념이 비어 있는<br>‘문학·문법 개념형’에 가깝습니다',
+  l:'문학 개념어와 문법 용어는 한번 놓치면 문제마다 반복해서 발목을 잡습니다. 빠진 개념을 찾아 채우면 비교적 빨리 안정되는 영역이기도 합니다.',
+  todo:['문학 개념어와 작품 해석의 기본 익히기','문법 개념을 처음부터 순서대로 정리하기','내신 범위 작품에 개념을 적용해 보기'],
+  ask:['문학과 문법 중 어느 쪽이 더 비어 있는지','최근 시험지에서 개념 때문에 틀린 문항','다음 학기 내신 범위에 맞춘 준비 순서']},
+ gap:{n:'실전 편차형',t:'시험마다 흔들리는<br>‘실전 편차형’에 가깝습니다',
+  l:'아는 내용은 많은데 낯선 지문이나 시간 압박 속에서 점수가 흔들리는 유형입니다. 범위가 정해진 시험과 실전 시험은 필요한 훈련이 다릅니다.',
+  todo:['낯선 지문에 적용하는 실전 독해 훈련','시험 시간 배분과 문제 푸는 순서 점검','모의고사 오답을 유형별로 분석하기'],
+  ask:['내신과 모의고사 성적이 차이 나는 원인','시간이 부족해지는 지점','학년별 모의고사로 실전을 대비하는 방법']},
+ habit:{n:'오답 관리형',t:'같은 문제를 또 틀리는<br>‘오답 관리형’에 가깝습니다',
+  l:'공부량보다 틀린 뒤에 무엇을 하는지가 더 중요한 유형입니다. 왜 틀렸는지 근거로 설명할 수 있게 되면 같은 실수가 줄어듭니다.',
+  todo:['오답의 원인을 근거와 함께 말해 보기','지문에서 답의 근거를 스스로 찾는 습관','정해진 분량을 꾸준히 점검받는 공부 루틴'],
+  ask:['현재 오답 정리 방식과 개선할 부분','1:1 오답 분석이 진행되는 방식','집에서 부모님이 확인해 주실 수 있는 부분']}
+};
+var GRADE_NOTE = {
+ '중1':'중등 시기에는 내신 대비와 함께 문학·문법의 기본 개념을 잡아 두면 고등 국어로 넘어갈 때 부담이 줄어듭니다.',
+ '중2':'중등 시기에는 내신 대비와 함께 문학·문법의 기본 개념을 잡아 두면 고등 국어로 넘어갈 때 부담이 줄어듭니다.',
+ '중3':'고등학교 입학 전 겨울은 길어지는 지문과 고1 모의고사 유형에 미리 익숙해지기 좋은 시기입니다.',
+ '고1':'겨울방학은 새 학년 내신이 시작되기 전에 비어 있는 개념과 독해 습관을 정리할 수 있는 시간입니다.',
+ '고2':'겨울방학은 새 학년 내신이 시작되기 전에 비어 있는 개념과 독해 습관을 정리할 수 있는 시간입니다.',
+ '고3':'남은 시험 일정에 따라 우선순위가 달라지므로, 상담에서 일정부터 함께 확인합니다.'
+};
+
+/* ---------- 상태 ---------- */
+var store = {
+  get:function(k){try{return JSON.parse(sessionStorage.getItem(k))}catch(e){return null}},
+  set:function(k,v){try{sessionStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+};
+var answers = store.get('vh_answers') || {};   // 개인정보는 저장하지 않습니다.
+var submitted = store.get('vh_submitted') === true;
+var params = new URLSearchParams(location.search);
+var attribution = store.get('vh_attr');
+if(!attribution || params.get('c') || params.get('utm_source')){
+  attribution ={variant:params.get('c')||'',source:params.get('utm_source')||'',medium:params.get('utm_medium')||'',
+    campaign:params.get('utm_campaign')||'',content:params.get('utm_content')||'',referrer:document.referrer||''};
+  store.set('vh_attr',attribution);
+}
+function track(name,data){
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(Object.assign({event:name},data||{}));
+}
+
+/* ---------- 공통 치환 ---------- */
+document.querySelectorAll('[data-tel]').forEach(function(a){a.href='tel:'+C.phone.replace(/-/g,'');a.textContent=C.phone});
+document.querySelectorAll('[data-tel-btn]').forEach(function(a){a.href='tel:'+C.phone.replace(/-/g,'');a.textContent='바로 전화하기 '+C.phone});
+document.querySelectorAll('[data-address]').forEach(function(a){a.textContent=C.address});
+document.querySelectorAll('[data-map]').forEach(function(a){a.href='https://map.naver.com/p/search/'+encodeURIComponent('원주시 능라동길 3')});
+document.querySelectorAll('[data-retention]').forEach(function(a){a.textContent=C.privacyRetention});
+document.querySelectorAll('[data-demo]').forEach(function(a){a.hidden=!!C.endpoint});
+document.addEventListener('click',function(e){var a=e.target.closest('[data-track]');if(a)track('funnel_click',{target:a.getAttribute('data-track')})});
+
+var hero = HERO[attribution.variant] || HERO.base;
+$('hero-title').innerHTML = hero.t;
+$('hero-sub').textContent = hero.s;
+
+/* ---------- 라우팅 (브라우저 뒤로가기가 그대로 동작) ---------- */
+var VIEWS = ['landing','quiz','result','apply','done'];
+function show(v,focusId){
+  VIEWS.forEach(function(n){$('v-'+n).hidden = n!==v});
+  window.scrollTo(0,0);
+  if(focusId){var el=$(focusId);if(el)el.focus({preventScroll:true})}
+}
+function firstUnanswered(){for(var i=0;i<QS.length;i++){if(answers[QS[i].id]===undefined)return i}return -1}
+function route(){
+  var h = location.hash.replace(/^#/,'');
+  if(h.indexOf('quiz/')===0){
+    var n = parseInt(h.split('/')[1],10)-1;
+    if(!(n>=0&&n<QS.length)) n=0;
+    var fu = firstUnanswered();
+    if(fu!==-1&&n>fu) n=fu;
+    renderQ(n);show('quiz','q-title');return;
+  }
+  if(h==='result'){
+    if(firstUnanswered()!==-1){location.replace('#quiz/'+(firstUnanswered()+1));return}
+    renderResult();show('result','r-title');track('funnel_step',{step:'result',type:resultType()});return;
+  }
+  if(h==='apply'){prepApply();show('apply','a-title');track('funnel_step',{step:'apply'});return}
+  if(h==='done'){
+    if(!submitted){location.replace('#apply');return}
+    renderDone();show('done','d-title');return;
+  }
+  show('landing');
+}
+window.addEventListener('hashchange',route);
+
+/* ---------- 진단 ---------- */
+function renderQ(i){
+  var q = QS[i];
+  $('q-title').textContent = q.t;
+  $('q-sub').textContent = q.s; $('q-sub').hidden = !q.s;
+  $('q-count').textContent = (i+1)+' / '+QS.length;
+  $('q-bar').style.width = ((i+1)/QS.length*100)+'%';
+  $('q-back').onclick = function(){location.hash = i===0 ? '' : '#quiz/'+i};
+  var box = $('q-opts'); box.textContent=''; box.className = 'opts'+(q.grid?' grid':'');
+  q.o.forEach(function(o,idx){
+    var b = document.createElement('button');
+    b.type='button'; b.className='opt'; b.textContent=o.l;
+    b.setAttribute('aria-pressed', answers[q.id]===idx ? 'true':'false');
+    b.onclick = function(){
+      answers[q.id]=idx; store.set('vh_answers',answers);
+      box.querySelectorAll('.opt').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      track('funnel_step',{step:'quiz_'+(i+1)});
+      setTimeout(function(){location.hash = i+1<QS.length ? '#quiz/'+(i+2) : '#result'},160);
+    };
+    box.appendChild(b);
+  });
+}
+function gradeLabel(){var a=answers.grade;return a===undefined?'':QS[0].o[a].l}
+function resultType(){
+  if(firstUnanswered()!==-1) return null;
+  var sc={reading:0,concept:0,gap:0,habit:0};
+  QS.forEach(function(q){var k=q.o[answers[q.id]].k||{};Object.keys(k).forEach(function(t){sc[t]+=k[t]})});
+  var max=Math.max(sc.reading,sc.concept,sc.gap,sc.habit);
+  // 동점이면 학부모가 가장 걱정한다고 고른 모습(2번 문항)을 우선합니다.
+  var primary=Object.keys(QS[1].o[answers.sign].k)[0];
+  if(sc[primary]===max) return primary;
+  return ['reading','concept','gap','habit'].filter(function(t){return sc[t]===max})[0];
+}
+function fillList(id,items){var u=$(id);u.textContent='';items.forEach(function(s){var li=document.createElement('li');li.textContent=s;u.appendChild(li)})}
+function renderResult(){
+  var T=TYPES[resultType()];
+  $('r-title').innerHTML=T.t;
+  $('r-lead').textContent=T.l;
+  fillList('r-todo',T.todo);fillList('r-ask',T.ask);
+  $('r-grade').textContent=GRADE_NOTE[gradeLabel()];
+}
+$('r-retry').addEventListener('click',function(){answers={};store.set('vh_answers',answers)});
+
+/* ---------- 신청 ---------- */
+function prepApply(){
+  var rt=resultType();
+  var b=$('a-badge');
+  if(rt){b.textContent='진단 결과: '+TYPES[rt].n;b.hidden=false}else{b.hidden=true}
+  var g=gradeLabel();
+  if(g&&!$('f-grade').value)$('f-grade').value=g;
+}
+$('f-phone').addEventListener('input',function(e){
+  var d=e.target.value.replace(/\D/g,'').slice(0,11);
+  e.target.value=d.length<4?d:d.length<8?d.slice(0,3)+'-'+d.slice(3):d.length<11?d.slice(0,3)+'-'+d.slice(3,6)+'-'+d.slice(6):d.slice(0,3)+'-'+d.slice(3,7)+'-'+d.slice(7);
+});
+function setErr(inputId,errId,msg){
+  var e=$(errId),i=$(inputId);
+  e.textContent=msg||'';e.hidden=!msg;
+  if(msg)i.setAttribute('aria-invalid','true');else i.removeAttribute('aria-invalid');
+  return !msg;
+}
+function validate(){
+  var name=$('f-name').value.trim(), digits=$('f-phone').value.replace(/\D/g,'');
+  var ok=[
+    setErr('f-name','e-name',name?'':'성함을 입력해 주세요.'),
+    setErr('f-phone','e-phone',/^01[016789]\d{7,8}$/.test(digits)?'':'휴대전화 번호를 정확히 입력해 주세요.'),
+    setErr('f-grade','e-grade',$('f-grade').value?'':'학년을 선택해 주세요.'),
+    setErr('f-privacy','e-privacy',$('f-privacy').checked?'':'상담 신청을 위해 개인정보 수집·이용 동의가 필요합니다.')
+  ];
+  var ids=['f-name','f-phone','f-grade','f-privacy'];
+  for(var i=0;i<ok.length;i++){if(!ok[i]){$(ids[i]).focus();return false}}
+  return true;
+}
+function answerLabels(){
+  var out={};
+  QS.forEach(function(q){if(answers[q.id]!==undefined)out[q.id]=q.o[answers[q.id]].l});
+  return out;
+}
+$('form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var se=$('send-err'); se.hidden=true;
+  if(!validate())return;
+  var f=e.target, rt=resultType();
+  var payload={
+    parentName:f.parentName.value.trim(),phone:f.phone.value,grade:f.grade.value,
+    method:f.method.value,time:f.time.value,question:f.question.value.trim(),
+    privacyConsent:true,marketingConsent:$('f-mkt').checked,
+    resultType:rt?TYPES[rt].n:'(진단 없이 신청)',answers:answerLabels(),attribution:attribution,website:f.website.value
+  };
+  var btn=$('submit');btn.disabled=true;btn.textContent='보내는 중…';
+  function success(){
+    submitted=true;store.set('vh_submitted',true);f.reset();
+    track('lead_submit',{type:payload.resultType,grade:payload.grade});
+    location.hash='#done';
+  }
+  function fail(){
+    se.textContent='';
+    se.appendChild(document.createTextNode('신청을 보내지 못했습니다. 잠시 후 다시 시도하시거나 '));
+    var a=document.createElement('a');a.href='tel:'+C.phone.replace(/-/g,'');a.textContent=C.phone;se.appendChild(a);
+    se.appendChild(document.createTextNode('로 전화해 주세요. 입력하신 내용은 그대로 남아 있습니다.'));
+    se.hidden=false;
+  }
+  function finish(){btn.disabled=false;btn.textContent='상담 신청하기'}
+  if(!C.endpoint){success();finish();return}   // 미리보기 모드: 전송하지 않음(화면에 안내 표시)
+  fetch(C.endpoint,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)})
+    .then(function(r){return r.json()})
+    .then(function(j){if(j&&j.ok)success();else fail()})
+    .catch(fail).then(finish);
+});
+
+/* ---------- 완료 ---------- */
+function renderDone(){
+  var rt=resultType();
+  $('d-result').hidden=!rt;
+  if(rt)$('d-type').textContent=TYPES[rt].n+' · 상담 때 결과를 바탕으로 자세히 안내해 드립니다.';
+}
+
+/* ---------- 하단 고정 버튼: 히어로를 지나면 표시 ---------- */
+if('IntersectionObserver' in window){
+  new IntersectionObserver(function(en){$('sticky').classList.toggle('on',!en[0].isIntersecting)}).observe($('hero-copy'));
+}
+
+track('funnel_step',{step:'landing',variant:attribution.variant});
+route();
+})();
+</script>
+</body>
+</html>
